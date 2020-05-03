@@ -1,0 +1,28 @@
+verson:  '3'
+
+services:
+  mysqlbase:
+  image: mysql:5.7
+  volumes:
+    - mysql_storage:/var/lib/mysql
+  restart: always
+  environment:
+    MYSQL_root_password: redhat
+   
+
+  prestashop
+    image: prestashop/prestashop
+    restart: always
+    volumes:
+      - prestashop_storage:/var/www/html
+    environment:
+      DB_SERVER: mysql
+    ports: 
+      -8081:80
+    depends_on:
+       - mysqlbase
+
+  volumes:
+    mysql_storage:
+    prestashop storage:
+    
