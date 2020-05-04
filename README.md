@@ -4,7 +4,7 @@ this is the docker project created by me under the guidance of vimal daga sir.
 TO USE THIS :
 
 Install docker on Redhat or any base OS
--- yum install docker-ce --nobest
+-- yum install docker ce --nobest
  
 Install Docker COmpose
 -- Run the command -sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
